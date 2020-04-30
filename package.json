@@ -40,7 +40,8 @@
     "request": "~2.83.0",
     "semver": "~5.4.1",
     "svgo": "~0.7.1",
-    "xml2js": "~0.4.16"
+    "xml2js": "~0.4.16",
+    "snyk": "^1.316.1"
   },
   "scripts": {
     "coverage:test:js": "nyc node_modules/mocha/bin/_mocha '*.spec.js' 'lib/**/*.spec.js' 'service-tests/**/*.spec.js'",
@@ -70,7 +71,9 @@
     "start:server": "RATE_LIMIT=false node server 8080 ::",
     "now-start": "node server",
     "prestart": "npm run frontend-depcheck",
-    "start": "concurrently --names server,frontend \"ALLOWED_ORIGIN=http://localhost:3000 npm run start:server\" \"BASE_URL=http://[::]:8080 next dev\""
+    "start": "concurrently --names server,frontend \"ALLOWED_ORIGIN=http://localhost:3000 npm run start:server\" \"BASE_URL=http://[::]:8080 next dev\"",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
   },
   "bin": {
     "badge": "lib/badge-cli.js"
@@ -168,5 +171,6 @@
     "type": "opencollective",
     "url": "https://opencollective.com/shields",
     "logo": "https://opencollective.com/opencollective/logo.txt"
-  }
+  },
+  "snyk": true
 }
