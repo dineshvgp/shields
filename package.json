@@ -31,7 +31,7 @@
     "lodash.countby": "^4.6.0",
     "lodash.mapkeys": "^4.6.0",
     "lodash.uniq": "~4.5.0",
-    "moment": "^2.19.3",
+    "moment": "^2.29.2",
     "node-env-flag": "^0.1.0",
     "pdfkit": "~0.8.0",
     "pretty-bytes": "^4.0.2",
