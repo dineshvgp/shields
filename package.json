@@ -22,12 +22,12 @@
     "url": "https://github.com/badges/shields"
   },
   "dependencies": {
-    "camp": "~17.2.1",
-    "chrome-web-store-item-property": "~1.1.2",
+    "camp": "~17.2.2",
+    "chrome-web-store-item-property": "~1.2.0",
     "dot": "~1.1.2",
     "gm": "^1.23.0",
     "json-autosave": "~1.1.2",
-    "jsonpath": "~1.0.0",
+    "jsonpath": "~1.0.2",
     "lodash.countby": "^4.6.0",
     "lodash.mapkeys": "^4.6.0",
     "lodash.uniq": "~4.5.0",
@@ -39,7 +39,7 @@
     "redis": "~2.6.2",
     "request": "~2.83.0",
     "semver": "~5.4.1",
-    "svgo": "~0.7.1",
+    "svgo": "~1.0.0",
     "xml2js": "~0.4.16"
   },
   "scripts": {
